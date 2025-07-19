@@ -25,7 +25,9 @@ A modern web application to manage student records, built with **Spring Boot**, 
 ## 📸 Result Images
 Add screenshots of your running application here:
 
-![Home Page](src/main/resources/static/result_home.png)
+![Home Page]
+<img width="1040" height="439" alt="Screenshot 2025-07-19 210110" src="https://github.com/user-attachments/assets/87431a92-cc5d-4a13-b995-f4001b06b910" />
+
 ![Edit Student](src/main/resources/static/result_edit.png)
 
 > Place your screenshots in `src/main/resources/static/` and rename them as above for automatic display in this README.
