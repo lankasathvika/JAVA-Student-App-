@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Student App</title>
+</head>
+<body>
+    <h1>Student List</h1>
+    <form method="post" action="/add">
+        ID: <input type="text" name="id">
+        Name: <input type="text" name="name">
+        Marks: <input type="text" name="marks">
+        <button type="submit">Add</button>
+    </form>
+    <br>
+    <form action="/search" method="get">
+    <input type="text" name="keyword" placeholder="Search by name or ID">
+    <button type="submit">Search</button>
+</form>
+
+    <ul>
+        <li th:each="student : ${students}">
+        <span th:text="${student.id} + ' - ' + ${student.name} + ' - ' + ${student.marks}"></span>
+        <a th:href="@{'/edit/' + ${student.id}}">Edit</a>  <!-- Edit link -->
+    </li>
+    </ul>
+</body>
+</html>
